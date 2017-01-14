@@ -1,0 +1,166 @@
+/*浏览器样式重置*/
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-family: 微软雅黑;
+	overflow-x:hidden; 
+}
+/*内容部分*/
+#fullpage>section{
+	position: relative;
+}
+#fullpage>section:first-child{
+	background-image: url(../images/downloadImages/d2.jpg);
+	background-position: -200px 80px;
+	background-repeat: no-repeat;
+}
+#fullpage>section:nth-child(2){
+	background-image: url(../images/downloadImages/d3.jpg);
+	background-position: -350px 80px;
+	background-repeat: no-repeat;
+}
+#fullpage>section:nth-child(3){
+	background-image: url(../images/downloadImages/wd4.jpg);
+	background-position: -350px 80px;
+	background-repeat: no-repeat;
+}
+
+#fullpage>section:last-child{
+	padding-top: 80px;
+}
+#img1{
+	transform:translate(50px,100px);
+	transition: transform 1.5s;
+}
+#img2{
+	position: absolute;
+	right: -15%;
+	bottom: 50px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+#img3{
+	position: absolute;
+	bottom: 100px;
+	left:200px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+#img4{
+	position: absolute;
+	bottom: 100px;
+	left:200px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+#img5{
+	position: absolute;
+	bottom: 120px;
+	left:220px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+#img6{
+	position: absolute;
+	bottom: 140px;
+	left:250px;
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+/*页脚*/
+/*页脚*/
+footer{
+	background: #2b2b2b;
+	padding:55px 0;
+}
+footer>div{
+	width: 570px;
+	margin:0 auto;
+}
+#download{
+	height: 280px;
+}
+#download .left-btn{
+	float: left;
+	width: 280px;
+}
+#download .left-btn a{
+	display: block;
+	width: 280px;
+	height: 60px;
+	transition: background 0.5s;
+	border-radius:4px;
+	margin-top:105px; 
+}
+#download .left-btn a.android{
+	background: url(../images/downloadImages/dload_andriod1.jpg);
+}
+#download .left-btn a.android:hover{
+	background: url(../images/downloadImages/dload_andriod2.jpg);
+}
+#download .right-img{
+	float:right;
+}
+#download .right-img>img{
+	width: 180px;
+	margin-top: 30px;
+}
+
+#download .right-img>img:hover{
+	transition: all 1s;
+	transform: scale(1.6);
+}
+#download .right-img p{
+	font-size: 20px;
+	color: #FFF;
+	text-align: center;
+	margin-top: 10px;
+}
+div.copy-right{
+	width: 720px;
+	margin-top: 100px;
+}
+div.copy-right li{
+	font-size: 14px;
+	color: #999;
+	float: left;
+	margin-left: 20px;
+}
+div.copy-right li a{
+	font-size: 14px;
+	color: #999;
+}
+div.copy-right li a:hover{
+	color: #fff;
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.3);
+
+	
+}
+#header a{
+	color: #fff;
+	
+}
+
+
+
+
+
+
+
+

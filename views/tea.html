@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="/css/common.css" />
+<link rel="stylesheet" href="/css/tea.css" />
+<style>
+	.nGyroParallax1 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transition: 0.5s ease-out;
+	}
+	
+	#chouchin-1-1 img {
+		/*width: 400px;*/
+		width: 80%;
+	}
+	
+	#chouchin-1-1 {
+		/*margin-left: 50px;*/
+		margin-left: -45%;
+		/*margin-top: -150px;*/
+		margin-top: -18%;
+	}
+	
+	#chouchin-1-1 img {
+		transform: translate3d(0, 0, 0);
+		transition: 0.5s;
+	}
+</style>
+<div id="main">
+	<div id="first">
+		<img id="img1" src="images/teaImages/tea_3.png" alt="" />
+		<div id="cover" style="display: none;"></div>
+		<div id="word" style="display: none;">
+			<h1>来自五星酒店的超</h1>
+			<h1>值惬意丽思卡尔顿双人下午茶</h1>
+			<p>正统的英式贵族下午茶，在丰富茶点中舒享午后时光</p>
+			<div class="tea_xq">
+				<a href="/DetailPages/detailpg/shop1_14">查看详情</a>
+			</div>
+		</div>
+
+	</div>
+	<!--第一部分-->
+	<div class="content clearfloat">
+		<div id="chouchin-1-1" class="nGyroParallax1">
+			<img src="images/teaImages/tea_1.png" alt="" />
+		</div>
+		<div class="introduce">
+<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<table>
+				<tr>
+					<td><i>Info:</i></td>
+					<td>缤纷甜点</td>
+				</tr>
+				<tr>
+					<td><i>Spcl:</i></td>
+					<td>种类丰富 搭配合理</td>
+
+				</tr>
+				<tr>
+					<td><i>Dial:</i></td>
+					<td>15552728912</td>
+				</tr>
+				<tr>
+					<td><i>From:</i></td>
+					<td>郑州市金水区未来路</td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td id="d_look">
+						<a href="/dinner/merShop" style="font-size: 20px;">去看看&nbsp;&nbsp;></a>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	<!--第二部分-->
+	<div class="content2 clearfloat">
+		<img src="images/teaImages/tea_5.png" alt="" />
+		<div class="introduce2 ">
+			<br />
+			<br />
+			<br /><br />
+			<br />
+			<table>
+				<tr>
+					<td><i>Info:</i></td>
+					<td>英式双人下午茶</td>
+				</tr>
+				<tr>
+					<td><i>Spcl:</i></td>
+					<td>手法纯正 庄园温馨</td>
+
+				</tr>
+				<tr>
+					<td><i>Dial:</i></td>
+					<td>15552728912</td>
+				</tr>
+				<tr>
+					<td><i>From:</i></td>
+					<td>郑州市金水区未来路</td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td id="d_look">
+						<a href="/dinner/merShop2" style="font-size: 20px;">去看看&nbsp;&nbsp;></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--<img src="images/teaImages/tea_5.png" alt="" />-->
+	</div>
+	<!--第三部分-->
+	<div class="content3 clearfloat">
+		<img src="images/teaImages/tea_6.png" alt="" />
+		<div class="introduce3">
+			<br /><br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<table>
+				<tr>
+					<td><i>Info:</i></td>
+					<td>温润吧梨果</td>
+				</tr>
+				<tr>
+					<td><i>Spcl:</i></td>
+					<td>古典韵味 优雅恬静</td>
+
+				</tr>
+				<tr>
+					<td><i>Dial:</i></td>
+					<td>15552728912</td>
+				</tr>
+				<tr>
+					<td><i>From:</i></td>
+					<td>郑州市金水区未来路</td>
+
+				</tr>
+				<tr>
+					<td></td>
+					<td id="d_look">
+						<a href="/dinner/merShop3" style="font-size: 20px;">去看看&nbsp;&nbsp;></a>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script src="/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/tea.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.easing.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/jquery.nGyroParallax.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function() {
+
+		$(window).load(function() {
+			$('#chouchin-1-1').nGyroParallax({
+				magnification: 0.003
+			});
+			$('#chouchin-1-2').nGyroParallax({
+				magnification: 0.003
+			});
+			$('#chouchin-1-3').nGyroParallax({
+				magnification: 0.003
+			});
+			//  $('#aori').nGyroParallax();
+			//  $('#hotaru').nGyroParallax();
+		});
+
+	});
+</script>

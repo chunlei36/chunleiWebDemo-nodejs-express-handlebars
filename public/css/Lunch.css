@@ -1,0 +1,975 @@
+/******nav部样式*******/
+*{
+	font-family:Arial;
+}
+article{
+	padding-bottom: 200px;
+}
+#lunch_nav{
+	min-width: 1210px;
+	height: 550px;
+	position: relative;
+	background:url(../images/lunchImages/lunch_1.jpg) no-repeat;
+	background-size: cover;
+}
+#nav_message{
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	margin-left:-150px;
+}
+#nav_briefing{
+	color: #E0E0E0;
+	text-align: center;
+	z-index: 10;
+}
+#nav_briefing>p:nth-child(1){
+	font-size: 30px;
+	line-height: 36px;
+}
+#nav_briefing>p:nth-child(2){
+	font-size: 30px;
+	line-height: 36px;
+}
+#nav_briefing>p:nth-child(3){
+	color: #BEBEBE;
+	font-size: 10px;
+	line-height: 36px;
+}
+#nav_briefing>a{
+	color: silver;
+	font-size: 20px;
+	line-height: 80px;
+	padding:15px 50px;
+	border: 1px solid silver;
+}
+#shadow_eerie{
+	background-color: rgba(0,0,0,0.4);
+	width: 100%;
+	height: 100%;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+
+
+/********内容区THE DELICOUS第一块********/
+#delicacy_one{
+	background-image: url(../images/lunchImages/lunch_13.jpg);
+	background-repeat:repeat;
+	min-width: 1210px;
+	height: 1000px;
+}
+#delicacy_one_cateone{
+	min-width: 1210px;
+	/*min-width: 70%;*/
+	margin: 0 auto;
+}
+#delicacy_one_cateone>div:nth-child(1){
+	text-align: center;
+	font-size: 45px;
+	height: 160px;
+	width: 1210px;
+	margin:0 auto;
+	line-height: 160px;
+	position: relative;
+}
+#delicacy_one_cateone>div:nth-child(1)>b{
+	position: absolute;
+	display: block;
+	width: 70px;
+	height: 70px;
+}
+#delicacy_one_cateone>div:nth-child(1)>p>img{
+	width: 350px;
+}
+#delicacy_one_cateone>div:nth-child(1)>b:nth-child(2){
+	top: 25px;
+	left: 59.7%;
+	border-right: 2px solid #BB5E00;
+}
+#delicacy_one_cateone>div:nth-child(1)>b:nth-child(3){
+	top: 44px;
+	left: 61%;
+	border-top: 2px solid #BB5E00;
+}
+
+#delicacy_one_catetwo{
+	width: 1000px;
+	height: 800px;
+	margin:0 auto;
+	position: relative;
+}
+.delicacy_cateone p{
+	font-size: 18px;
+	color: #6C6C6C;
+	line-height: 30px;
+}
+.delicacy_cateone p:nth-child(3){
+	font-size: 14px;
+	line-height: 30px;
+}
+.delicacy_cateone p:nth-child(4){
+	font-size: 14px;
+	line-height: 50px;
+}
+.delicacy_cateone{
+	position: relative;
+	width: 400px;
+	height: 230px;
+}
+.delicacy_cateone>div>div{
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+}
+.delicacy_cateone>div>div>a{
+	color: #6C6C6C;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 80px;
+	padding:12px 70px;
+	border: 1px solid #6C6C6C;
+	border-radius: 5px;
+}
+.delicacy_cateone>div>div>b:nth-child(1){
+	display: block;
+	width: 50px;
+	position: absolute;
+	left: -35px;
+	top: 38px;
+	border-bottom: 2px solid #BB5E00;
+}
+.delicacy_cateone>div>div>b:nth-child(3){
+	display: block;
+	width:50px;
+	position: absolute;
+	right: -35px;
+	top: 38px;
+	border-bottom: 2px solid #BB5E00;
+}
+.delicacy_catetwo{
+	width: 570px;
+	height: 460px;
+	overflow: hidden;
+	position: relative;
+}
+.delicacy_catetwo>img{
+	position: absolute;
+	left: -160px;
+	top: 40px;
+	width: 700px;
+	height: 460px;
+}
+.delicacy_catethree{
+	width: 600px;
+	height: 550px;
+	overflow: hidden;
+	position: relative;
+}
+.delicacy_catethree>img{
+	position: absolute;
+	left: -100px;
+	top: 40px;
+	width: 800px;
+	height: 500px;
+}
+
+.delicacy_catefour{
+	text-align: center;
+}
+.delicacy_catefour p{
+	font-size: 18px;
+	color: #6C6C6C;
+	line-height: 30px;
+}
+.delicacy_catefour p:nth-child(3){
+	font-size: 14px;
+	line-height: 30px;
+}
+.delicacy_catefour p:nth-child(4){
+	font-size: 14px;
+	line-height: 50px;
+}
+.delicacy_catefour{
+	width: 400px;
+	height: 230px;
+	position: absolute;
+	right: -40px;
+	bottom: 0;
+	visibility:hidden;
+	animation: 1s ease both;
+}
+.delicacy_catefour>div>div{
+	position: absolute;
+	right: 24%;
+	bottom: 20px;
+}
+.delicacy_catefour>div>div>a{
+	color: #6C6C6C;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 80px;
+	padding:12px 70px;
+	border: 1px solid #6C6C6C;
+	border-radius: 5px;
+}
+.delicacy_catefour>div>div>b:nth-child(1){
+	display: block;
+	width: 50px;
+	position: absolute;
+	left: -35px;
+	top: 38px;
+	border-bottom: 2px solid #BB5E00;
+}
+.delicacy_catefour>div>div>b:nth-child(3){
+	display: block;
+	width:50px;
+	position: absolute;
+	right: -35px;
+	top: 38px;
+	border-bottom: 2px solid #BB5E00;
+}
+/*对THE DELICOUS第一块中内容定位*/
+.delicacy_cateone{
+	position: absolute;
+	left: 0;
+	top: 70px;
+	visibility:hidden;
+	animation: 1s ease both;
+}
+.delicacy_catetwo{
+	position: absolute;
+	right: -120px;
+	top: -20px;
+	z-index: 10;
+	visibility:hidden;
+	animation:1s ease both;
+}
+.delicacy_catethree{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	visibility:hidden;
+	animation: 1s ease both;
+}
+@keyframes zoom{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform:scale(1);
+	}
+}
+@-moz-keyframes zoom{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform:scale(1);
+	}
+}
+@-ms-keyframes zoom{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform:scale(1);
+	}
+}
+@-webkit-keyframes zoom{
+	from{
+		transform: scale(0.1);
+	}
+	to{
+		transform:scale(1);
+	}
+}
+@keyframes zoom{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-moz-keyframes zoom{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-ms-keyframes zoom{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-webkit-keyframes zoom{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+
+/********内容区THE DELICOUS第二块********/
+#delicacy_two{
+	min-width: 1210px;
+}
+#delicacy_two_cateone{
+	min-width: 1210px;
+	margin: 0 auto;
+}
+#delicacy_two_cateone>div:nth-child(1){
+	text-align: center;
+	font-size: 45px;
+	background: url(../images/lunchImages/lunch_14.jpg) repeat;
+	height: 100px;
+	width: 100%;
+	line-height: 160px;
+}
+#delicacy_two_cateone>div:nth-child(1)>div{
+	width: 1210px;
+	margin:0 auto;
+	position: relative;
+}
+#delicacy_two_cateone>div:nth-child(1)>div>b{
+	position: absolute;
+	display: block;
+	width: 70px;
+	height: 70px;
+}
+#delicacy_two_cateone>div:nth-child(1)>div>p>img{
+	width: 350px;
+}
+#delicacy_two_cateone>div:nth-child(1)>div>b:nth-child(2){
+	top: 25px;
+	left: 59.7%;
+	border-right: 2px solid #BB5E00;
+}
+#delicacy_two_cateone>div:nth-child(1)>div>b:nth-child(3){
+	top: 44px;
+	left: 61%;
+	border-top: 2px solid #BB5E00;
+}
+#delicacy_two_catetwo{
+	width: 100%;
+	height: 500px;
+	background: url(../images/lunchImages/lunch_3.jpg) repeat;
+}
+#delicacy_two_catetwo>div{
+	box-sizing: border-box;
+	height: 100%;
+	min-width: 1210px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+	padding-top: 130px;
+}
+#delicacy_two_catetwo>div>p:nth-child(1){
+	font-size: 28px;
+	color: #E0E0E0;
+	line-height: 70px;
+}
+#delicacy_two_catetwo>div>p:nth-child(2){
+	font-size: 10px;
+	color: #E0E0E0;
+	line-height: 20px;
+}
+#delicacy_two_catetwo>div>p:nth-child(3){
+	font-size: 10px;
+	color: #E0E0E0;
+	line-height: 20px;
+}
+#delicacy_two_catetwo>div>div>a{
+	color: #E0E0E0;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 190px;
+	padding:15px 60px;
+	border: 1px solid #E0E0E0;
+	border-radius: 5px;
+}
+
+
+/********内容区THE DELICOUS第三块********/
+#delicacy_three{
+	background-image: url(../images/lunchImages/lunch_13.jpg);
+	background-repeat:repeat;
+	min-width: 1210px;
+	height:700px;
+}
+#delicacy_three_cateone{
+	width: 1100px;
+	height: 800px;
+	box-sizing: border-box;
+	margin:0 auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	animation: 1s ease both;
+}
+#delicacy_three_cateone>div{
+	width: 28%;
+	height: 300px;
+	overflow: hidden;
+	visibility: hidden;
+	float: left;
+	padding: 0 2.5%;
+	animation: 1s ease both;
+}
+#delicacy_three_cateone>div:nth-child(3){
+	overflow: inherit;
+}
+#delicacy_three_cateone>div>div{
+	width: 100%;
+}
+#delicacy_three_cateone>div img{
+	width: 130%;
+}
+/*第二块*/
+#delicacy_three_catetwo{
+	width: 1100px;
+	height: 800px;
+	display: none;
+	box-sizing: border-box;
+	margin:0 auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	animation: 1s ease both;
+}
+#delicacy_three_catetwo>div{
+	width: 28%;
+	height: 300px;
+	overflow: hidden;
+	visibility: hidden;
+	float: left;
+	padding: 0 2.5%;
+}
+#delicacy_three_catetwo>div:nth-child(3){
+	overflow: inherit;
+}
+#delicacy_three_catetwo>div>div{
+	width: 100%;
+}
+#delicacy_three_catetwo>div img{
+	width: 130%;
+}
+/*第三块*/
+#delicacy_three_catethree{
+	width: 1100px;
+	height: 800px;
+	box-sizing: border-box;
+	margin:0 auto;
+	display: none;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	position: relative;
+	animation: 1s ease both;
+}
+#delicacy_three_catethree>div{
+	width: 28%;
+	height: 300px;
+	overflow: hidden;
+	visibility: hidden;
+	float: left;
+	padding: 0 2.5%;
+}
+#delicacy_three_catethree>div:nth-child(3){
+	overflow: inherit;
+}
+#delicacy_three_catethree>div>div{
+	width: 100%;
+}
+#delicacy_three_catethree>div img{
+	width: 130%;
+}
+
+.delicacy_cateseven>div{
+	position: relative;
+	top:-40%;
+	height: 100%;
+	transform: rotate(90deg);
+	transform-origin:50% 40% ;
+}
+.delicacy_cateseven>div>b{
+	display: inline-block;
+	width:70%;
+	border-top: 1px solid #BB5E00;
+	position: absolute;
+	top: 40%;
+	left: 0;
+}
+.delicacy_cateseven>div>p{
+	font-size: 28px;
+	position: absolute;
+	top: 36%;
+	right: 0;
+}
+.delicacy_cateeight{
+	text-align: center;
+	position: relative;
+}
+.delicacy_cateeight p{
+	font-size: 18px;
+	color: #6C6C6C;
+	line-height: 40px;
+}
+.delicacy_cateeight p:nth-child(3){
+	font-size: 14px;
+	line-height: 30px;
+}
+.delicacy_cateeight p:nth-child(4){
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.delicacy_cateeight>div{
+	position: absolute;
+	width: 100%;
+	bottom: 34px;
+}
+.delicacy_cateeight>div>b{
+	float: left;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	border-bottom: 1px solid #BB5E00;
+}
+.delicacy_cateeight>div>div{
+	padding-right: 40px;
+	float: right;
+}
+.delicacy_cateeight>div>div>span:nth-child(2){
+	font-size: 24px;
+	line-height: 40px;
+}
+.delicacy_cateeight>div>div>a{
+	font-size: 30px;
+	position: relative;
+	top: 5px;
+	margin-left: 10px;
+}
+
+@keyframes zoomOne{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-moz-keyframes zoomOne{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-ms-keyframes zoomOne{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-webkit-keyframes zoomOne{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+
+/********内容区THE DELICOUS第四块********/
+#delicacy_four{
+	background-image: url(../images/lunchImages/lunch_4.jpg);
+	background-repeat:repeat;
+	min-width: 1210px;
+	height:500px;
+}
+#delicacy_four_cateone{
+	width: 700px;
+	margin: 0 auto;
+}
+#delicacy_four_cateone>div{
+	float: left;
+	visibility: hidden;
+	animation: 1s ease both;
+}
+.delicacy_catenten{
+	text-align: center;
+	background: url(../images/lunchImages/lunch_11.png) no-repeat;
+	background-size: 100%;
+	width: 42%;
+	height: 450px;
+}
+#delicacy_four_cateone>div:nth-child(1){
+	position: relative;
+	top: 30px;
+}
+#delicacy_four_cateone>div:nth-child(2){
+	position: relative;
+	top: 90px;
+	padding-top: 70px;
+	left: -15px;
+	z-index: 10;
+}
+.delicacy_catenten>p{
+	font-size: 14px;
+	color: #BEBEBE;
+	line-height: 24px;
+}
+.delicacy_catenten>p:nth-child(1){
+	font-size: 24px;
+	color: #E0E0E0;
+	line-height: 50px;
+}
+.delicacy_catenten>a{
+	font-size: 14px;
+	color: #BEBEBE;
+	line-height: 50px;
+	padding: 8px 30px;
+	border: 2px solid #6C6C6C;
+	border-radius: 3px;
+}
+@keyframes zoomTwo{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-moz-keyframes zoomTwo{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-ms-keyframes zoomTwo{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@-webkit-keyframes zoomTwo{
+	0%{
+		transform: scale(0.1);
+		-webkit-transform: scale(0.1);
+		-ms-transform: scale(0.1);
+		-moz-transform: scale(0.1);
+	}
+	50%{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	}
+	70%{
+		transform: scale(0.9);
+		-webkit-transform: scale(0.9);
+		-ms-transform: scale(0.9);
+		-moz-transform: scale(0.9);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-moz-transform: scale(1);
+	}
+}
+@keyframes moveOne{
+	from{left: -100%;}
+	to{left: 0;}
+}
+@-moz-keyframes moveOne{
+	from{left: -100%;}
+	to{left: 0;}
+}
+@-ms-keyframes moveOne{
+	from{left: -100%;}
+	to{left: 0;}
+}
+@-webkit-keyframes moveOne{
+	from{left: -100%;}
+	to{left: 0;}
+}
+@keyframes moveTwo{
+	from{right: -100%;}
+	to{right: 0;}
+}
+@-moz-keyframes moveTwo{
+	from{right: -100%;}
+	to{right: 0;}
+}
+@-ms-keyframes moveTwo{
+	from{right: -100%;}
+	to{right: 0;}
+}
+@-webkit-keyframes moveTwo{
+	from{right: -100%;}
+	to{right: 0;}
+}
+
+#ckxquy{
+	border-radius: 5px;
+}
+#ckxquy:hover{
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	color: #b45329;
+}
+/*修改每个去看看样式*/
+#delicacy_one_catetwo td:first-child{
+	text-align: left;
+}
+
+#delicacy_one_catetwo td{
+	font-size: 18px;
+    color: #6C6C6C;
+    line-height: 30px;
+    text-align: center;
+}
+#delicacy_one_catetwo #d_look{
+	text-align: right;line-height: 60px;
+}
+#delicacy_one_catetwo #d_look:hover>a{
+	color:#f9ba7d;
+}
+
+/*最下面详情改变*/
+.delicacy_cateeight td:first-child{
+	text-align: left;
+}
+.delicacy_cateeight td{
+	font-size: 18px;
+    color: #6C6C6C;
+    line-height: 30px;
+    text-align: center;
+}
+.delicacy_cateeight #d_look{
+	text-align: right;
+	line-height: 60px;
+}
+
+ #d_look a{
+	color: grey;
+}
+.delicacy_cateeight #d_look:hover>a{
+	color:#f9ba7d;
+}

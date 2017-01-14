@@ -1,0 +1,493 @@
+/*科e互联特效基本框架CSS*/
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-text-size-adjust: none
+}
+.clearfloat:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	zoom: 1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 12px;
+	font-weight: normal
+}
+
+body>div {
+	margin: 0 auto
+}
+
+a img {
+	border: 0
+}
+
+body {
+	color: #333;
+	text-align: center;
+	position: relative;
+	font: 12px "微软雅黑";
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+	vertical-align: 0
+}
+
+a {
+	outline-style: none;
+	color: #535353;
+	text-decoration: none
+}
+
+a:hover {
+	color: #d5561a;
+	text-decoration: none
+}
+
+.clear {
+	height: 0;
+	overflow: hidden;
+	clear: both
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:focus {
+	text-decoration: none;
+}
+.container {
+	margin: 0 auto;
+}
+.horizental-item {
+	float: left;
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	position: relative;
+}
+
+.full_height {
+	height: 850px;
+}
+.internetke {
+	height: 100%;
+}
+#main {
+	height: 100%;
+}
+
+#splash {
+	min-width: 960px;
+	height: 100%;
+}
+
+.footer2 {
+	position: absolute;
+	top: 130px;
+	text-align: center;
+	width: 100%;
+	padding-top: 20px;
+	height: 120px;
+	border-top: 1px solid #333;
+}
+#dash {
+	margin: 0 auto;
+	height: 2px;
+	width: 800px;
+	background: url('../images/paymentImages/dot.png');
+	position: relative;
+	top: 25px;
+}
+#progress {
+	margin: 0 auto;
+	height: 2px;
+	width: 150px;
+	left: -325px;
+	background: white;
+	position: relative;
+	top: 23px;
+}
+#navbtns {
+	width: 850px;
+	position: relative;
+	z-index: 1;
+}
+.navbtn {
+	width: 100px;
+	float: left;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	display: inline-block;
+	line-height: 50px;
+	color: white;
+}
+.navbtn a:hover {
+	color: white;
+}
+.navbtn img {
+	width: 50px;
+}
+#internetke_home{
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+#internetke_intro {
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+#internetke_gift {
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+#internetke_feedback {
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+#internetke_related {
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+#carousel_container{
+	background: url(../images/paymentImages/payment_bgc.jpg);
+}
+.carousel {
+	position: relative
+}
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden
+}
+.carousel-inner>.item {
+	position: relative;
+	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left
+}
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	line-height: 1
+}
+.carousel-inner>.active,
+.carousel-inner>.next,
+.carousel-inner>.prev {
+	display: block
+}
+.carousel-inner>.active {
+	left: 0
+}
+.carousel-inner>.active.left {
+	left: -100%
+}
+.carousel-inner>.active.right {
+	left: 100%
+}
+
+
+
+/*个人操作*/
+.carousel-inner{
+	width: 830px;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#carousel_container>div>div>a{
+	color: white;
+	display: block;
+	width: 100px;
+	height: 40px;
+	font-size: 18px;
+	position: absolute;
+	right: 7%;
+	bottom: 10%;
+	display: block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #6C6C6C;
+	border-radius: 4px;
+	box-shadow: 4px 4px 4px #333333;
+}
+#carousel_container>div>div:nth-child(4)>a{
+	bottom: 10%;
+}
+.internetke{
+	padding-top: 30%;
+	box-sizing: border-box;
+}
+.internetke table{
+	width: 100%;
+	color: #BEBEBE;
+}
+#contentone tr:nth-child(1){
+	height: 100px;
+}
+#contentone tr:nth-child(3){
+	height: 100px;
+	line-height: 60px;
+}
+#contentone tr>td:nth-child(1){
+	text-align: left;
+}
+#contentone tr>td:nth-child(2){
+	text-align: center;
+}
+#contentone tr>td:nth-child(3){
+	text-align: right;
+}
+.contentone_one>span>a:hover{
+	color: #BEBEBE;
+}
+.contentone_one>span:nth-child(1){
+	font-size: 28px;
+	cursor: pointer;
+}
+.contentone_one>span:nth-child(2){
+	display:inline-block;
+	width:50px;
+	height: 20px;
+	line-height: 20px;
+	border: 2px solid #8E8E8E;
+	box-shadow: 3px 3px 3px #333333;
+	border-radius: 4px;
+}
+.contentone_one>span:nth-child(3){
+	cursor: pointer;
+	
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.contentone_one>span:nth-child(1):active a{
+	color: red;
+}
+.contentone_one>span:nth-child(3):active a{
+	color: red;
+}
+#internetke_feedback{
+	font-size: 24px;
+	color: #BEBEBE;
+}
+#internetke_feedback>div:nth-child(1){
+	border: 1px solid #535353;
+	padding-bottom: 20px;
+	height: 150px;
+}
+#internetke_feedback>div>div{
+	text-align: left;
+	line-height: 60px;
+	width: 94%;
+	margin: 0 auto;
+	border-bottom: 1px solid #BEBEBE;
+}
+#internetke_feedback>div>div:nth-child(2){
+	height: 80px;
+	font-size: 16px;
+	line-height: 40px;
+}
+#float_left>div:nth-child(1){
+	float: left;
+}
+#float_left>div:nth-child(2){
+	float: right;
+	line-height: 80px;
+}
+#float_left>div:nth-child(2) span{
+	color: #BB5E00;
+}
+#internetke_feedback>div:nth-child(2){
+	border: 1px solid #535353;
+	padding-bottom: 20px;
+	height: 600px;
+}
+#payment>div:nth-child(1){
+	font-size: 16px;
+}
+#internetke_feedback>#payment>div:nth-child(2){
+	height:120px;
+}
+#payment>div:nth-child(2)>div>span{
+	margin-left: 10px;
+	color: #BB5E00;
+}
+.payment_change_one{
+	border: 2px solid #BB5E00;
+}
+#internetke_feedback>#payment>div:nth-child(2) li{
+	position: relative;
+	float: left;
+	width: 130px;
+	height: 44px;
+	margin:20px 20px 20px 0;
+}
+#internetke_feedback>#payment>div:nth-child(2) li b{
+	position: absolute;
+}
+.payment_change_two{
+	right: 0px;
+	bottom: 0px;
+	display: inline-block;
+	width: 16px;
+	height: 18px;
+	background:url(../images/paymentImages/payway.jpg) no-repeat 0 -494px;
+}
+#internetke_feedback>#payment>div:nth-child(2) li img{
+	width: 100%;
+}
+#payment>div:nth-child(1)>p{
+	color: #BEBEBE;
+}
+#payment>div:nth-child(1)>p>span{
+	color: #6C6C6C;
+	font-size: 14px;
+}
+#payment>div:nth-child(1)>p>span:nth-child(2){
+	color: #BB5E00;
+}
+#payment .message{
+	display: none;
+	position: relative;
+}
+#payment .message>input{
+	margin: 20px 0 0 20px;
+	padding-left: 20px;
+	width: 300px;
+	height: 40px;
+	font-size: 14px;
+	outline-color:#333333;
+	background-color: transparent;
+	color: #fff;
+	border-radius: 5px;
+	
+}
+#payment .message>button{
+	width: 100px;
+	height: 35px;
+	margin-left: 10px;
+	color: #BEBEBE;
+	outline: none;
+	background-color:  #333333;
+	border: transparent;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #333333;
+}
+#payment .message>button:hover{
+	background-color:#535353;
+}
+.codes{
+	position: relative;
+	top: 10px;
+	font-size: 12px;
+	color: #BB5E00;
+	width: 200px;
+	overflow: hidden;
+}
+.codes>img{
+	width: 300px;
+	position: relative;
+	left: -50px;
+}
+#bar_codes{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+	display: none;
+	background-color: rgba(0,0,0,0.7);
+}
+.bar_codes{
+	width: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+.bar_codes>img{
+	width: 600px;
+	position: relative;
+	left: -100px;
+}
+.bar_codes>div:nth-child(1){
+	font-size: 24px;
+	line-height: 100px;
+	color: #BEBEBE;
+}
+.bar_codes>a{
+	font-size: 18px;
+	padding: 10px 30px;
+	color: #BEBEBE;
+	border: 1px solid #333333;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #333333;
+	line-height: 100px;
+}
+#internetke_related{
+	font-size: 20px;
+	line-height: 50px;
+}
+#internetke_related div,
+#internetke_related p{
+	color: #BB5E00;
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 40px;
+	border: 1px solid #BB5E00;
+	box-shadow: 1px 1px 3px #BB5E00;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+body{
+	height: 1150px;
+}
+#ckxquy{
+	border-radius: 5px;
+}
+#ckxquy:hover{
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	color: #b45329;
+	cursor: pointer;
+	
+}
+#finish_two{
+	border-radius: 5px;
+}
+#finish_two:hover{
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	color: #b45329;
+	cursor: pointer;
+}
+#finish{
+	border-radius: 5px;
+}
+#finish:hover{
+	background-color: rgba(255,255,255,0.3);
+	border:none;
+	color: #b45329;
+	cursor: pointer;
+}
+
+

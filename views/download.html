@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="/css/jquery.fullpage.min.css" />
+		<link rel="stylesheet" href="/css/HFcss/basic-styles.css">
+		<!--endbuild-->
+		<!--build:css css/okayNav.min.css-->
+		<link rel="stylesheet" href="/css/HFcss/okayNav-base.css">
+		<link rel="stylesheet" href="/css/HFcss/okayNav-theme.css">
+		<link rel="stylesheet" href="/css/HFcss/header.css">
+		<link rel="stylesheet" type="text/css" href="/css/common.css" />
+		<link rel="stylesheet" href="/css/download.css" />
+	</head>
+
+	<body>
+
+		<!--唯有美食不可辜负   食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致，你身边的美食å专家，带您享受精选美食 -->
+		<!--赏心悦目 每个菜品都是一道视觉盛宴，意境悠闲,意味不凡-->
+		<!--享用时刻 每种味道都会令你回味无穷，美味佳肴,令人垂涎三尺-->
+		<!--精美绝伦 每个菜品都独一无二的特别，新鲜可口,充满浓厚的情意!-->
+
+		<!--header和class保留一个即可-->
+
+		<header id="header" class="okayNav-header">
+			<a class="okayNav-header__logo" id="h_logo">
+				<div id="header_left">
+					<a href="#page1"><img src="/images/HFimg/icon1.png" alt="" /></a>
+					<a id="header_dw" href="#">郑州<b id="header_ang"></b></a>
+					<div></div>
+				</div>
+			</a>
+
+			<nav role="navigation" id="nav-main" class="okayNav">
+				<ul>
+					<li>
+						<a href="/">首页</a>
+					</li>
+					<li>
+						<a href="/lunch">午餐</a>
+					</li>
+					<li>
+						<a href="/dinner">晚餐</a>
+					</li>
+					<li>
+						<a href="/tea">下午茶</a>
+					</li>
+					<li>
+						<a href="/my.html" id="mytitle">我的</a>
+					</li>
+					<li>
+						<a href="/download">下载应用</a>
+					</li>
+					<li>
+						<a href="/aboutus">关于我们</a>
+					</li>
+					<li>
+						<a href="/contactus">联系我们</a>
+					</li>
+
+					<li id="h_last">
+						<a href="/login" target="_blank" id="dltitle">登录/注册</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- 正文 -->
+		<article id="fullpage">
+			<section class="section">
+				<img src="/images/downloadImages/7.png" id="img1">
+			</section>
+			<section class="section">
+				<img src="/images/downloadImages/banner2.png" id="img2">
+			</section>
+			<section class="section">
+				<img src="/images/downloadImages/13.png" id="img3">
+				<img src="/images/downloadImages/14.png" id="img4">
+				<img src="/images/downloadImages/12.png" id="img5">
+				<img src="/images/downloadImages/9.png" id="img6">
+			</section>
+			<section class="section">
+				<!-- 页脚 -->
+				<footer>
+					<div id="download">
+						<div class="left-btn">
+							<!--<span class="apple"></span>-->
+							<a href="/download/deliceus.apk" class="android"></a>
+						</div>
+						<div class="right-img">
+							<img src="/images/downloadImages/codes.png" alt="扫描二维码下载">
+							<p>扫描二维码</p>
+						</div>
+					</div>
+					<div class="copy-right">
+						<ul>
+							<li>Copyright &copy;2016-2017</li>
+							<li>
+								<a href="#">http://hist.ac.cn/</a>
+							</li>
+							<li>
+								<a href="#">郑州delicous有限公司</a>
+							</li>
+							<li>豫ICP备12040847</li>
+						</ul>
+					</div>
+				</footer>
+			</section>
+		</article>
+
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/jquery.okayNav.js"></script>
+
+		<script src="/js/jquery.fullpage.min.js"></script>
+		<script>
+//		下载
+		$('.android').click(function () {
+			alert('确定下载？')
+		})
+			//	<!--头部-->
+			var navigation = $('#nav-main').okayNav();
+			$('#fullpage').fullpage({
+				// anchors启用浏览器历史记录导航，并且能够作为菜单导航的名称
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+				//设置section背景色
+				sectionsColor: ['white', '#60DDD4', 'white', '#2b2b2b'],
+				//显示导航]
+				navigation: true,
+				afterRender: function() {
+					//dom准备就绪后执行
+//					$(this).find('section:nth(3) img').css('opacity', 0);
+				},
+				afterLoad: function(anchor, index) {
+					//当前内容页加载后执行
+					if(index == 1) {
+						$('#img1').css('transform', 'translate(350px,100px)')
+					} else if(index == 2) {
+						$('#img2').animate({
+							right: '15%',
+							opacity: 1
+						}, 1000)
+					} else if(index == 3) {
+						$('#img3').animate({
+							'opacity': 1
+						}, 500);
+						$('#img4').delay(500).animate({
+							'opacity': 1
+						}, 500);
+						$('#img5').delay(1000).animate({
+							'opacity': 1
+						}, 500);
+						$('#img6').delay(1500).animate({
+							'opacity': 1
+						}, 500);
+					} 
+				}
+			});
+		</script>
+	</body>
+
+</html>
+<script type="text/javascript">
+	$.get('/deliuser/islog', function(result) {
+		console.log(result)
+		if(result.islog) {
+
+			$('#dltitle').hide()
+			$('#mytitle').show()
+		} else {
+			$('#dltitle').show()
+			$('#mytitle').hide()
+		}
+	})
+</script>

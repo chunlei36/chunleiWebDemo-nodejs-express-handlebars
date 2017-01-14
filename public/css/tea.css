@@ -1,0 +1,604 @@
+#main {
+	background: url(../images/teaImages/tea_bg0.jpg);
+	background-size: 100% 100%;
+	/*height: 3000px;*/
+	padding-bottom: 350px;
+}
+
+#main {
+	width: 100%;
+}
+
+#first {
+	width: 100%;
+	position: relative;
+	color: white;
+}
+
+#first>img {
+	width: 100%;
+	height: 550px;
+}
+
+#word {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -15%;
+	margin-top: -9%;
+	text-align: center;
+}
+#word .tea_xq{
+	width:50%;
+	margin: 0 auto;
+}
+#word a {
+	display: block;
+	margin: 0 auto;
+	margin-top: 15%;
+	border-radius: 5px;
+	color: silver;
+	font-size: 20px;
+	padding:15px 50px;
+	border: 1px solid silver;
+}
+
+#word a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	color: #b45329;
+}
+
+#word>h1 {
+	font-size: 35px;
+	line-height: 40px;
+	font-weight: normal;
+}
+
+#word>p {
+	padding-top: 20px;
+	padding-top: 4%;
+	font-size: 15px;
+	color: #ccc;
+}
+
+#cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+
+
+/*第一部分*/
+
+.content {
+	width: 65%;
+	margin: 0 auto;
+	/*min-width: 1210px;*/
+	background: url(../images/teaImages/tea_4.png) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	position: relative;
+}
+
+
+/*修改*/
+
+
+/*.content>img{
+	width:45%;
+	float: left;
+}*/
+
+.introduce {
+	width: 50%;
+	/*position: absolute;
+	left: 50%;
+	top:0;*/
+	float: right;
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+.introduce>h1 {
+	color: #eee;
+	/*padding-top: 138px;*/
+	padding-top: 20%;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.introduce>h2 {
+	color: #ccc;
+	padding-top: 10%;
+	/*padding-top: 70px;*/
+	font-size: 24px;
+	padding-bottom: 28px;
+}
+
+.introduce>p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #ccc;
+}
+
+.introduce>a {
+	color: #ccc;
+	display: block;
+	margin: 0 auto;
+	/*margin-top: 116px;*/
+	margin-top: 16%;
+	width: 180px;
+	height: 50px;
+	font-size: 25px;
+	border: 1px solid #fff;
+	line-height: 50px;
+	border-radius: 7px;
+}
+
+.content>img {
+	/*padding-top:65px;*/
+	padding-top: 5%;
+	/*padding-bottom: 74px;*/
+	/*padding-left: 75px;*/
+	padding-left: 5%;
+}
+
+
+/*第二部分*/
+
+.content2 {
+	width: 65%;
+	margin: 0 auto;
+	/*margin-top: 172px;*/
+	margin-top: 10%;
+	/*min-width: 1210px;*/
+	background: url(../images/teaImages/tea_4.png) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	position: relative;
+}
+
+.introduce2 {
+	width: 50%;
+	/*position: absolute;
+	left:82px;
+	top:0;*/
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	/*padding-bottom: 72px;*/
+	padding-bottom: 10%;
+}
+
+.introduce2>h1 {
+	/*padding-top: 138px;*/
+	padding-top: 20%;
+	font-size: 30px;
+	font-weight: normal;
+	color: #eee;
+}
+
+.introduce2>h2 {
+	/*padding-top: 70px;*/
+	padding-top: 10%;
+	font-size: 24px;
+	padding-bottom: 28px;
+	color: #ccc;
+}
+
+.introduce2>p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #ccc;
+}
+
+.introduce2>a {
+	color: #ccc;
+	display: block;
+	margin: 0 auto;
+	/*margin-top: 116px;*/
+	margin-top: 14%;
+	width: 180px;
+	height: 50px;
+	font-size: 25px;
+	border: 1px solid #fff;
+	line-height: 50px;
+	border-radius: 7px;
+}
+
+.content2>img {
+	float: right;
+	width: 50%;
+	/*padding-right: 25px;*/
+	/*margin-left: 50%;*/
+	/*padding-right: 5%;*/
+	/*padding-bottom: 10%;*/
+}
+
+
+/*第三部分*/
+
+.content3 {
+	width: 65%;
+	margin: 0 auto;
+	/*margin-top: 172px;*/
+	margin-top: 10%;
+	background: url(../images/teaImages/tea_4.png) no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	position: relative;
+}
+
+.content3>img {
+	width: 50%;
+}
+
+.introduce3 {
+	/*position: absolute;
+	left: 53%;
+	top:0;*/
+	float: right;
+	width: 50%;
+	text-align: center;
+	padding-bottom: 8%;
+}
+
+.introduce3>h1 {
+	/*padding-top: 138px;*/
+	padding-top: 20%;
+	font-size: 30px;
+	font-weight: normal;
+	color: #eee;
+}
+
+.introduce3>h2 {
+	/*padding-top: 70px;*/
+	padding-top: 10%;
+	font-size: 24px;
+	/*padding-bottom: 28px;*/
+	padding-bottom: 5%;
+	color: #ccc;
+}
+
+.introduce3>p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #ccc;
+}
+
+.introduce3>a {
+	color: #ccc;
+	display: block;
+	margin: 0 auto;
+	/*margin-top: 116px;*/
+	margin-top: 16%;
+	width: 180px;
+	height: 50px;
+	font-size: 25px;
+	border: 1px solid #fff;
+	line-height: 50px;
+	border-radius: 7px;
+}
+
+#more {
+	display: block;
+	padding-top: 20px;
+	padding-top: 3%;
+	color: #ccc;
+	font-size: 16px;
+}
+
+
+/*引插件以后*/
+
+#chouchin-1-1 {
+	float: left;
+	width: 50%;
+}
+
+
+/*媒体查询*/
+
+
+/*1360*/
+
+@media screen and (max-width: 1360px) {
+	/*内容第一部分*/
+	.introduce>h1 {
+		font-size: 25px;
+	}
+	.introduce>h2 {
+		font-size: 19px;
+	}
+	.introduce>p {
+		font-size: 9px;
+	}
+	.introduce>a {
+		width: 140px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	/*第二部分*/
+	.introduce2>h1 {
+		font-size: 25px;
+	}
+	.introduce2>h2 {
+		font-size: 19px;
+	}
+	.introduce2>p {
+		font-size: 9px;
+	}
+	.introduce2>a {
+		width: 140px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	/*第三部分*/
+	.introduce3>h1 {
+		font-size: 25px;
+	}
+	.introduce3>h2 {
+		font-size: 19px;
+	}
+	.introduce3>p {
+		font-size: 9px;
+	}
+	.introduce3>a {
+		width: 140px;
+		height: 40px;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	#more {
+		font-size: 11px;
+	}
+	/*头部分*/
+	#word>h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	#word>p {
+		font-size: 15px;
+	}
+	#word>a {
+		line-height: 50px;
+		width: 190px;
+		height: 50px;
+		font-size: 23px;
+	}
+}
+
+
+/*1100*/
+
+@media screen and (max-width: 1100px) {
+	/*内容第一部分*/
+	.introduce>h1 {
+		font-size: 20px;
+	}
+	.introduce>h2 {
+		font-size: 14px;
+	}
+	.introduce>p {
+		font-size: 6px;
+	}
+	.introduce>a {
+		width: 100px;
+		height: 30px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+	/*第二部分*/
+	.introduce2>h1 {
+		font-size: 20px;
+	}
+	.introduce2>h2 {
+		font-size: 14px;
+	}
+	.introduce2>p {
+		font-size: 6px;
+	}
+	.introduce2>a {
+		width: 100px;
+		height: 30px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+	/*第三部分*/
+	.introduce3>h1 {
+		font-size: 20px;
+	}
+	.introduce3>h2 {
+		font-size: 14px;
+	}
+	.introduce3>p {
+		font-size: 6px;
+	}
+	.introduce3>a {
+		width: 100px;
+		height: 30px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+	/*头部分*/
+	#word>h1 {
+		font-size: 25px;
+		line-height: 25px;
+	}
+	#word>p {
+		font-size: 13px;
+	}
+	#word>a {
+		line-height: 40px;
+		width: 150px;
+		height: 40px;
+		font-size: 23px;
+	}
+}
+
+
+/*880*/
+
+@media screen and (max-width: 880px) {
+	/*内容第一部分*/
+	.introduce>h1 {
+		font-size: 15px;
+	}
+	.introduce>h2 {
+		font-size: 9px;
+	}
+	.introduce>p {
+		font-size: 1px;
+	}
+	.introduce>a {
+		width: 70px;
+		height: 20px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+	/*内容第二部分*/
+	.introduce2>h1 {
+		font-size: 15px;
+	}
+	.introduce2>h2 {
+		font-size: 9px;
+	}
+	.introduce2>p {
+		font-size: 1px;
+	}
+	.introduce2>a {
+		width: 70px;
+		height: 20px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+	/*第三部分*/
+	.introduce3>h1 {
+		font-size: 15px;
+	}
+	.introduce3>h2 {
+		font-size: 9px;
+	}
+	.introduce3>p {
+		font-size: 1px;
+	}
+	.introduce3>a {
+		width: 70px;
+		height: 20px;
+		font-size: 10px;
+		line-height: 20px;
+	}
+	#more {
+		font-size: 6px;
+	}
+	/*头部*/
+	#word>h1 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	#word>p {
+		font-size: 10px;
+	}
+	#word>a {
+		line-height: 30px;
+		width: 100px;
+		height: 30px;
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*头部*/
+	#word>h1 {
+		font-size: 10px;
+		line-height: 10px;
+	}
+	#word>p {
+		font-size: 5px;
+	}
+	#word>a {
+		line-height: 20px;
+		width: 60px;
+		height: 20px;
+		font-size: 7px;
+	}
+}
+
+/*修改详情样式*/
+.introduce{
+	padding-left: 10%
+}
+.introduce tr>td{
+	font-size: 20px;
+	color: #ccc;
+	line-height: 35px;
+}
+.introduce tr>td:last-child {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.introduce tr:last-child>td {
+	background: none;
+}
+table a{
+	color: #CCCCCC;font-style: italic;	
+}
+table a:hover{
+	/*color:#f9ba7d;*/
+	color: #ab885e;
+}
+#d_look{
+	text-align: right;
+	line-height: 60px;
+}
+
+
+/*第二个*/
+.introduce2{
+	padding-left: 10%
+}
+.introduce2 tr>td{
+	font-size: 20px;
+	color: #ccc;
+	line-height: 35px;
+}
+.introduce2 tr>td:last-child {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.introduce2 tr:last-child>td {
+	background: none;
+}
+/*第三个*/
+.introduce3{
+	padding-left: 10%
+}
+.introduce3 tr>td{
+	font-size: 20px;
+	color: #ccc;
+	line-height: 35px;
+}
+.introduce3 tr>td:last-child {
+	border: 1px solid transparent;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.introduce3 tr:last-child>td {
+	background: none;
+}

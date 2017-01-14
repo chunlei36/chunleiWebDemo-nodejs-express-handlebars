@@ -1,0 +1,382 @@
+.m_box {
+	background: url(../images/myImages/m_bg.jpg) no-repeat;
+	width: 100%;
+	margin-top: 130px;
+	padding-bottom: 500px;
+}
+
+.m-container {
+	width: 70%;
+	border-top: 2px solid #333;
+	margin: 0 auto;
+	min-width: 700px;
+	position: relative;
+}
+
+.m-container>div {
+	float: left;
+}
+
+.m_left {
+	width: 20%;
+	padding-top: 50px;
+	margin: 0 auto;
+	min-width: 175px;
+	border-right: 1px solid #333;
+	padding-right: 30px;
+}
+
+.m_right {
+	padding-left: 5%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.m_left img {
+	width: 150px;
+	height: 150px;
+}
+
+.m_left div {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.m_left div>span {
+	line-height: 30px;
+	color: #d17b53;
+}
+
+.m_left li {
+	display: block;
+	line-height: 70px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.m_left a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	font-size: 20px;
+	color: #a0a0a0;
+}
+
+.m_left .fg {
+	background: #343434;
+	color: white;
+	border-radius: 10px;
+}
+
+.m_left .mc {
+	color: #FFFFFF;
+}
+
+
+/*子页面开始*/
+
+.o_header {
+	height: 80px;
+	line-height: 80px;
+	color: #FFFFFF;
+}
+
+
+/*我的订单页面*/
+
+.o_header a {
+	color: #a0a0a0;
+}
+
+.o_header a:hover {
+	color: #d2602c;
+}
+
+.o_header li {
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+.o_article {
+	border-top: 1px solid #3D2E27;
+	/*padding: 20px 0;*/
+	height: 200px;
+	margin-left: 30px;
+	min-width: 480px;
+}
+
+.o_article>div {
+	height: 100%;
+	float: left;
+	color: #A0A0A0;
+}
+
+.o_article>div>img {
+	height: 80%;
+	margin-top: 10%;
+}
+
+.o_article>div:last-child {
+	text-align: right;
+	float: right;
+}
+
+.o_article ul {
+	padding-left: 30px;
+	height: 80%;
+}
+
+.o_article li {
+	line-height: 35px;
+}
+
+.o_article span {
+	color: white;
+	font-size: 20px;
+}
+
+.o_article .m_buy {
+	width: 100px;
+	line-height: 50px;
+	float: right;
+	text-align: center;
+	border: 1px solid #B3B3B3;
+}
+
+.m_buy a {
+	color: white;
+}
+
+div.aa {
+	height: 80%;
+	margin-top: 20px;
+}
+
+div.bb {
+	margin-right: 20px;
+	text-align: center;
+}
+
+div.bb>div {
+	width: 100%;
+	text-align: center;
+}
+
+div.bb>div.m_buy {
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+div.bb>div.m_buy:hover {
+	background-color: #333;
+}
+
+.o_header>div.personmsg1 {
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+	margin: 20px auto;
+}
+
+.o_header>div.personmsg1>img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.personmsg1 #photo {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url(../images/downloadImages/upallavar11.png);
+	background-size: 100% 100%;
+	color: transparent;
+	outline: none;
+}
+
+.o_header>div.personmsg1>img {
+	width: 220px;
+	height: 220px;
+}
+
+.personmsg2 {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.personmsg2 h2 {
+	font-size: 18px;
+	font-weight: 100;
+	text-align: left;
+	line-height: 80px;
+	border-bottom: 1px solid #333;
+}
+
+.o_box {
+	position: relative;
+	margin-top: 50px;
+}
+
+.o_box_xg {
+	display: block;
+	width: 100px;
+	text-align: center;
+	background-color: #444;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 20px;
+	position: absolute;
+	top: 20px;
+	right: -50px;
+}
+
+.o_box_xg:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.o_header {
+	width: 100%;
+}
+
+#o_header2 {
+	display: none;
+}
+
+.o_header .btn_tj2 {
+	width: 170px;
+	height: 40px;
+	border-radius: 10px;
+	background: transparent;
+	font-size: 18px;
+	color: #fff;
+	border: none;
+	outline: none;
+	position: absolute;
+	left: 50%;
+	margin-left: -85px;
+	margin-top: 30px;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.o_header button:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#o_header2 input.inp1 {
+	width: 200px;
+	height: 40px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	outline: none;
+	border: 1px solid #333;
+	font-size: 16px;
+	color: #fff;
+	text-indent: 10px;
+}
+
+.inp2 {
+	margin-left: 40px;
+}
+
+.inp3 {
+	margin-left: 10px;
+}
+
+.personmsg1 {
+	position: relative;
+}
+
+.personmsg1_2_1 {
+	display: none;
+}
+
+#o_header2 {
+	line-height: 0;
+}
+
+
+/*客户调查*/
+
+#inquire {
+	margin-left: 70px;
+}
+
+#inquire>div:nth-child(1) {
+	font-size: 22px;
+	line-height: 40px;
+	border-bottom: 1px solid #333;
+	color: #aaa;
+	margin-bottom: 30px;
+}
+
+#inquire form h1 {
+	color: #aaa;
+	font-size: 16px;
+}
+
+#inquire form h1 span {
+	color: silver;
+	font-size: 16px;
+}
+
+#inquire form label {
+	display: inline-block;
+	width: 30px;
+}
+
+#inquire form input {
+	margin: 10px 0 20px 0;
+}
+
+#inquire form div>span {
+	margin: 10px 20px 20px 0;
+}
+
+#inquire textarea {
+	outline-color: #aaa;
+	background-color: transparent;
+	border-radius: 5px;
+	color: #fff;
+	border: 1px solid #333;
+}
+
+#inquire button {
+	width: 100px;
+	height: 40px;
+	outline: none;
+	margin: 20px auto 10px 140px;
+	background-color: #333;
+	color: white;
+}
+
+#inquire button:hover {
+	background-color: #666;
+}
+
+#m_right_init {
+	margin-top: 200px;
+	position: absolute;
+	left: 50%;
+	display: none;
+}
+
+#m_right_init * {
+	text-align: center;
+	color: #aaa;
+}
+
+#m_right_init h1 {
+	color: #ccc;
+	line-height: 120px;
+}
+
+#m_right_init p {
+	line-height: 30px;
+}

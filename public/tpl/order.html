@@ -1,0 +1,74 @@
+<style type="text/css">
+	.activecolor {
+		color: #d17b53;
+	}
+</style>
+
+<div class="o_box">
+	<div class="o_header">
+		<ul class="clearfloat">
+			<li>
+				<a onclick="canF1()" id="canF1">全部</a>
+			</li>
+			<li>
+				<a onclick="canF1()" id="canF2">未完成</a>
+			</li>
+
+			<li>
+				<a onclick="canF()" id="canF3">待收货</a>
+			</li>
+			<li>
+				<a onclick="canF()" id="canF4">已完成</a>
+			</li>
+		</ul>
+	</div>
+	<div class="o_article clearfloat" ng-repeat="(i,s) in users">
+		<div><img src="{{s.img}}" alt="" /></div>
+		<div class="aa">
+			<ul>
+				<li><span>{{s.mname}}</span></li>
+				<li>下单时间：{{s.times}}</li>
+				<li>{{s.price}}元*{{s.count}}</li>
+				<br />
+				<li>总价：<span>{{s.total}}元</span></li>
+			</ul>
+		</div>
+		<div class="clearfloat aa  bb">
+			<div>交易完成</div>
+			<br />
+			<br />
+
+			<br />
+			<br />
+
+			<div class="m_buy">
+				<a href="/mershop">去看看</a>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function colorinitall() {
+		$('#canF1').css('color', "#a0a0a0")
+		$('#canF2').css('color', "#a0a0a0")
+		$('#canF3').css('color', "#a0a0a0")
+		$('#canF4').css('color', "#a0a0a0")
+	}
+	$('#canF1').css('color', "#d17b53")
+	$('#canF1').click(function() {
+		colorinitall()
+		$('#canF1').css('color', "#d17b53")
+	})
+	$('#canF2').click(function() {
+		colorinitall()
+		$('#canF2').css('color', "#d17b53")
+	})
+	$('#canF3').click(function() {
+		colorinitall()
+		$('#canF3').css('color', "#d17b53")
+	})
+	$('#canF4').click(function() {
+		colorinitall()
+		$('#canF4').css('color', "#d17b53")
+	})
+</script>

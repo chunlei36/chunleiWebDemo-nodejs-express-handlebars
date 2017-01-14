@@ -1,0 +1,265 @@
+<!--build:css css/common.min.css-->
+<link rel="stylesheet" href="/css/HFcss/basic-styles.css">
+<!--endbuild-->
+<!--build:css css/okayNav.min.css-->
+<link rel="stylesheet" href="/css/HFcss/okayNav-base.css">
+<link rel="stylesheet" href="/css/HFcss/okayNav-theme.css">
+<link rel="stylesheet" href="/css/HFcss/header.css">
+<link rel="stylesheet" type="text/css" href="/css/headerfooter.css" />
+
+<link href="/css/Payment.css" rel="stylesheet">
+<script src="/js/jquery-1.11.0.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/Payment.js" type="text/javascript" charset="utf-8"></script>
+<header id="header" class="okayNav-header">
+	<a class="okayNav-header__logo" id="h_logo">
+		<div id="header_left">
+			<a href="#page1"><img src="/images/HFimg/icon1.png" alt="" /></a>
+			<a id="header_dw" href="#">郑州<b id="header_ang"></b></a>
+			<div></div>
+
+		</div>
+
+	</a>
+
+	<nav role="navigation" id="nav-main" class="okayNav">
+		<ul>
+			<li>
+				<a href="/">首页</a>
+			</li>
+			<li>
+				<a href="/lunch">午餐</a>
+			</li>
+			<li>
+				<a href="/dinner">晚餐</a>
+			</li>
+			<li>
+				<a href="/tea">下午茶</a>
+			</li>
+			<li>
+				<a href="/my.html" id="mytitle">我的</a>
+			</li>
+			<li>
+				<a href="/download">下载应用</a>
+			</li>
+			<li>
+				<a href="/aboutus">关于我们</a>
+			</li>
+			<li>
+						<a href="/contactus">联系我们</a>
+				
+			</li>
+			<li id="h_last">
+				<a href="/login" target="_blank" id="dltitle">登录/注册</a>
+			</li>
+		</ul>
+		<script type="text/javascript">
+			$.get('/deliuser/islog', function(result) {
+				console.log(result)
+				if(result.islog) {
+
+					$('#dltitle').hide()
+					$('#mytitle').show()
+				} else {
+					$('#dltitle').show()
+					$('#mytitle').hide()
+				}
+			})
+		</script>
+	</nav>
+</header>
+<script src="/js/jquery.okayNav.js"></script>
+<script type="text/javascript">
+	var navigation = $('#nav-main').okayNav();
+</script>
+<!--效果html开始-->
+<div id="paypage">
+	<div id="carousel_container" class="carousel slide full_height">
+		<div class="carousel-inner full_height">
+			<div id="internetke_home" class="internetke item" tag="home" progress="150">
+				<a href="javascript:switchinternetke(1)">完成</a>
+			</div>
+			<div id="internetke_intro" class="internetke item active" tag="intro" progress="300">
+				<div>
+					<table id="contentone">
+						<tr>
+							<td>订单详情</td>
+							<td></td>
+							<td>
+								<a href="/merShop">返回商家修改></a>
+							</td>
+						</tr>
+						<tr>
+							<td>商品</td>
+							<td>数量</td>
+							<td>小记</td>
+						</tr>
+						<tr>
+							<td><label for="change" id="changecolor1">多道墨西哥风情招牌菜式Q Mex Bar & Grill 双人餐</label></td>
+							<td class="contentone_one">
+								<span><a>-&nbsp;&nbsp;</a></span>
+								<span>1</span>
+								<span><a>&nbsp;&nbsp;+</a></span>
+							</td>
+							<td class="contentone_two">¥<span id="picepay">999</span></td>
+						</tr>
+					</table>
+
+					<script type="text/javascript">
+						console.log(22222)
+
+						console.log(localStorage.getItem('titlepay'))
+						console.log(localStorage.getItem('picepay'))
+						$('#changecolor1').text(localStorage.getItem('titlepay'))
+						$('#picepay').text(localStorage.getItem('picepay'))
+					</script>
+
+				</div>
+				<a href="javascript:switchinternetke(3)" id="ckxquy" class="zipayall">确认订单</a>
+			</div>
+			<div id="internetke_gift" class="internetke item" tag="gift" progress="370" style="display: none;" <a href="javascript:switchinternetke(3)">提交订单</a>
+			</div>
+			<div id="internetke_feedback" class="internetke item" tag="feedback" progress="520">
+				<div>
+					<div>订单详情</div>
+					<div class="clearfloat" id="float_left">
+						<div>
+							<p>多道墨西哥风情招牌菜式</p>
+							<p>Q Mex Bar & Grill 双人餐</p>
+						</div>
+						<div>
+							<p>支付金额:<span id="zipay">¥999</span></p>
+						</div>
+					</div>
+				</div>
+				<div id="payment">
+					<div>
+						<p>请选择支付方式<span>剩余支付时间</span><span><b>14</b>分<b>57</b>秒</span><span>逾期订单将自动取消</span></p>
+					</div>
+					<div>
+						<div>第三方支付:<span id="zipay2">¥999</span></div>
+						<div>
+							<ul class="clearfloat">
+								<li class="payment_change_one">
+									<a><img src="images/paymentImages/zhifubao.png" alt="" /><b class="payment_change_two"></b></a>
+								</li>
+								<li>
+									<a><img src="images/paymentImages/weixin.png" alt="" /><b></b></a>
+								</li>
+								<li>
+									<a><img src="images/paymentImages/shangye.png" alt="" /><b></b></a>
+								</li>
+								<li>
+									<a><img src="images/paymentImages/jianshe.png" alt="" /><b></b></a>
+								</li>
+								<li>
+									<a><img src="images/paymentImages/nongye.png" alt="" /><b></b></a>
+								</li>
+							</ul>
+							<script type="text/javascript">
+								$('.zipayall').click(function() {
+									$('#zipay').text($('#picepay').text())
+									$('#zipay2').text($('#picepay').text())
+								})
+							</script>
+							<div class="message">
+								<input type="text" placeholder="请写银行卡号" maxlength="19" /><br />
+								<input type="text" placeholder="请填写绑定手机号" maxlength="11" /><br />
+								<input type="text" placeholder="请输入手机验证码" /><button id="validate">点击发送</button>
+							</div>
+							<div class="codes">
+								<div>请点击扫描下方二维码完成支付</div>
+								<img src="images/paymentImages/codes.png" alt="" />
+							</div>
+						</div>
+					</div>
+					<div></div>
+				</div>
+				<a id="finish_two">完成支付</a>
+			</div>
+			<div id="internetke_related" class="internetke item" tag="related" progress="800">
+				<div>恭喜你，购买成功</div>
+				<p>尽情享用美食吧！！！</p>
+				<a href="/" id="ckxquy">返回首页</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer2">
+		<div id="navbar">
+			<div id="dash"></div>
+			<div id="progress" style="width: 400px; left: -200px;"></div>
+			<div id="navbtns" class="container">
+				<div class="navbtn" style="width: 23%;">
+					<a>
+						<img id="img_home" src="images/paymentImages/home.png" alt="首页">
+						<div>提交订单</div>
+					</a>
+				</div>
+				<div class="navbtn">
+					<a>
+						<img id="img_intro" src="images/paymentImages/intro_selected.png" alt="微任务介绍">
+						<div>确认订单</div>
+					</a>
+				</div>
+				<div class="navbtn" style="display: none;">
+					<a>
+						<img id="img_gift" src="images/paymentImages/gift.png" alt="精美礼品">
+						<div>确认订单</div>
+					</a>
+				</div>
+				<div class="navbtn">
+					<a>
+						<img id="img_feedback" src="images/paymentImages/feedback.png" alt="意见反馈">
+						<div>完成支付</div>
+					</a>
+				</div>
+				<div class="navbtn">
+					<a>
+						<img id="img_related" src="images/paymentImages/related.png" alt="相关产品">
+						<div>购买成功</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bar_codes">
+		<div class="bar_codes">
+			<div>请扫描下方二维码完成支付</div>
+			<img src="images/paymentImages/codes.png" alt="" />
+			<a href="javascript:switchinternetke(4)" id="finish">完成支付</a>
+		</div>
+	</div>
+</div>
+
+<footer>
+
+	<div class="footer" id="footer">
+		<div class="footer_left">
+			<div>
+				<h2>关于我们：</h2>
+				<h3>公司名称：郑州delicous有限公司</h3>
+				<h3>地址：郑州中原区伊河路与桐柏路交叉口</h3>
+				<h3>市场合作：**科技有限公司</h3>
+
+			</div>
+			<b></b>
+			<div>
+				<h2 id="footer_left_lx">关于我们：</h2>
+
+				<h3>豫ICP备12040847</h3>
+				<h3>豫公网安备41070202020130</h3>
+				<h3>豫ICP证050031</h3>
+
+			</div>
+
+		</div>
+
+		<div class="foote_right">
+			<img src="/images/HFimg/footer_1.png" />
+		</div>
+
+	</div>
+
+</footer>
+<script src="/js/headermove.js" type="text/javascript" charset="utf-8"></script>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录注册</title>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<link rel="stylesheet" href="/css/common.css" />
+		<link rel="stylesheet" href="/css/login.css" />
+		<link rel="stylesheet" type="text/css" href="/css/easyform.css" />
+	</head>
+	<style type="text/css">
+		.log_bg1 {
+			background-color: rgba(0, 0, 0, 0.5);
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: none;
+		}
+		
+		.log_bg1_box {
+			width: 300px;
+			height: 200px;
+			background-color: blanchedalmond;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -150px;
+			margin-top: -100px;
+			font-size: 20px;
+			text-align: center;
+			line-height: 100px;
+			color: #333;
+		}
+		
+		.log_bg1_box button {
+			display: block;
+			width: 140px;
+			height: 40px;
+			background-color: blanchedalmond;
+			margin: 0 auto;
+			border: 1px solid #ccc;
+			outline: none;
+			font-size: 20px;
+			border-radius: 5px;
+			margin-top: 10px;
+			color: #666;
+		}
+		
+		.log_bg1_box button:active {
+			background-color: #fff;
+			border: none;
+		}
+		
+		#l_container form input:focus {
+			background-color: white;
+			width: 60%;
+			color: #000;
+		}
+		
+		#l_container form input {
+			color: #666;
+		}
+		
+		.bg_moveww2 {
+			animation: bg_moveww2 1s both;
+		}
+		
+		@keyframes bg_moveww2 {
+			from {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+			to {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+		}
+		
+		@-moz-keyframes bg_moveww2 {
+			from {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+			to {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+		}
+		
+		@-ms-keyframes bg_moveww2 {
+			from {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+			to {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+		}
+		
+		@-webkit-keyframes bg_moveww2 {
+			from {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+			to {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+		}
+		
+		.bg_moveww3 {
+			animation: bg_moveww3 1s both;
+		}
+		
+		@keyframes bg_moveww3 {
+			from {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+			to {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		}
+		
+		@-moz-keyframes bg_moveww3 {
+			from {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+			to {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		}
+		
+		@-ms-keyframes bg_moveww3 {
+			from {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+			to {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		}
+		
+		@-webkit-keyframes bg_moveww3 {
+			from {
+				opacity: 1;
+				filter: alpha(opacity=100);
+			}
+			to {
+				opacity: 0.6;
+				filter: alpha(opacity=60);
+			}
+		}
+	</style>
+
+	<body>
+		<div id="l_container" class="l_container">
+			<div>
+				<a href="#" class="l_logo"></a>
+			</div>
+			<div class="l_box clearfloat">
+				<div class="l_left">
+					<div>
+						<ul class="clearfloat">
+							<li class="login_begin"><b class="up_right"></b>登录&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class=" up_left"></b></li>
+							<li class="spliter"><i></i></li>
+							<li class="register_begin"><b class="down_right"></b>注册&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class=" down_left"></b></li>
+						</ul>
+						<form id="login-form" class="form" method="post">
+							<input type="text" id="uid1" data-easyform="length:11;char-normal;real-time;regex:1[3,5,8]\d{9}" data-message='用户名有误！' data-easytip="theme:white;" placeholder="登录手机号">
+							<br />
+							<input type="password" id="psw1" data-easyform="length:6 16;" data-message="密码必须为6—16位" data-easytip="theme:white;" placeholder="密码">
+							<br />
+							<input type="submit" id="login-button" value="登录">
+							<br />
+							<br />
+							<a class="direct register_begin2">如无账号,请去注册！</a>
+						</form>
+						<form id="reg-form" class="form" method="post">
+							<input type="text" id="uid2" data-easyform="length:11;char-normal;real-time;regex:1[3,5,8]\d{9}" data-message='请输手机号！' data-easytip="theme:white;" placeholder="请输手机号">
+							<br />
+							<input type="password" id="pwd" data-easyform="length:6 18;char-chinese;real-time;" data-message="密码格式有误" data-easytip="theme:white;" placeholder="请输入6为以上密码">
+							<br />
+							<input type="submit" id="reg-button" value="注册" style="color: #957E63;">
+							<br />
+							<br />
+							<a class="direct login_begin2">已有账号,直接登录！</a>
+						</form>
+
+					</div>
+
+				</div>
+				<div class="l_right">
+					<div>
+						<iframe id="iframe1" name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=55" style="border:transparent" width="255" height="294" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="log_bg1" class="log_bg1">
+			<div id="log_bg1_box" class="log_bg1_box">
+				用户已存在请重新注册！
+				<button onclick="okquitall()">确定</button>
+
+			</div>
+
+		</div>
+
+		<div id="log_bg1_2" class="log_bg1">
+			<div id="log_bg1_box_2" class="log_bg1_box">
+				用户名不存在，请重新登录！
+				<button onclick="okquitall2()">确定</button>
+
+			</div>
+
+		</div>
+		<div id="log_bg1_3" class="log_bg1">
+			<div id="log_bg1_box_3" class="log_bg1_box">
+				密码有误，请重新登录！
+				<button onclick="okquitall3()">确定</button>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
+<script src="/js/easyform.js"></script>
+<script src="/js/login.js"></script>
+<script type="text/javascript">
+	function okquitall() {
+		$('#log_bg1').slideUp(300)
+	}
+
+	function okquitall2() {
+		$('#log_bg1_2').slideUp(300)
+	}
+
+	function okquitall3() {
+		$('#log_bg1_3').slideUp(300)
+	}
+	var regForm = $('#reg-form').easyform();
+	var loginForm = $('#login-form').easyform();
+
+	regForm.is_submit = false;
+	loginForm.is_submit = false;
+
+	regForm.error = function(ef, i, r) {
+		console.log("ef,i,r")
+		console.log(ef, i, r)
+
+		//console.log("Error事件：" + i.id + "对象的值不符合" + r + "规则");
+	};
+	//登录
+	loginForm.error = function() {
+		loginForm.is_submit = false;
+	}
+	$('#login-button').click(function() {
+			if($('#easytip-div-main-psw1').css('display') == 'block' || $('#easytip-div-main-uid1').css('display') == 'block') {
+
+			} else {
+				loginForm.is_submit = false;
+				console.log('登录')
+
+				var loguser = {
+					us: $('#uid1').val(),
+					pwd: $('#psw1').val()
+				}
+				$.post('/deliuser/loguser', {
+					us: $('#uid1').val()
+				}, function(result) {
+					console.log(result)
+					console.log(result.lo)
+					if(result.lo) {
+						console.log('验证密码')
+						console.log(loguser)
+						$.post('/deliuser/loguserzc', loguser, function(result1) {
+							console.log('密码')
+							console.log(result1)
+							if(result1.isSucc) {
+								window.location.href = "/";
+							} else {
+								$('#log_bg1_3').slideDown(300)
+
+							}
+						})
+
+					} else {
+						$('#log_bg1_2').slideDown(300)
+						return false
+					}
+
+				})
+			}
+		})
+		//	注册
+	$('#reg-button').click(function() {
+		if($('#easytip-div-main-pwd').css('display') == 'block' || $('#easytip-div-main-uid2').css('display') == 'block') {
+
+		} else {
+			var user = {
+				us: $('#uid2').val(),
+				pwd: $('#pwd').val()
+			}
+			$.post('/deliuser/reguser', {
+				us: $('#uid2').val()
+			}, function(result) {
+				console.log(result)
+				console.log(result.lo)
+				if(result.lo) {
+					$('#log_bg1').slideDown(300)
+
+				} else {
+					$.post('/deliuser/reguserzc', user, function(result1) {
+						if(result1.isSucc) {
+							//							window.location.reload();
+							window.location.href = "/"
+						}
+					})
+
+				}
+
+			})
+		}
+	})
+</script>
+<!--背景轮播-->
+<script type="text/javascript">
+	var l_container = 1;
+	$('#l_container').addClass('l_container3')
+
+	setInterval(function() {
+		l_container++
+		if(l_container % 2 == 0) {
+
+			$('#l_container').addClass('l_container2')
+			$('#l_container').removeClass('l_container3')
+		} else {
+			$('#l_container').addClass('l_container3')
+			$('#l_container').removeClass('l_container2')
+
+		}
+	}, 4800)
+</script>

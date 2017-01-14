@@ -1,0 +1,46 @@
+<div class="o_box">
+	<div class="o_header">
+		<div id="inquire">
+			<div>客户调查</div>
+			<form>
+				<div>
+					<h1><span>1、</span>您对我公司的服务是否满意？</h1>
+					<label for=""></label><input type="radio" name="manner" /><span>非常满意</span><input type="radio" name="manner" /><span>满意</span><input type="radio" name="manner" /><span>一般</span>
+				</div>
+				<div>
+					<h1><span>2、</span>您对我公司服务人员的技术水平是否满意？</h1>
+					<label for=""></label><input type="radio" name="skill" /><span>非常满意</span><input type="radio" name="manner" /><span>满意</span><input type="radio" name="manner" /><span>一般</span>
+				</div>
+				<div>
+					<h1><span>3、</span>您对我公司提供服务的种类是否满意？</h1>
+					<label for=""></label><input type="radio" name="kind" /><span>非常满意</span><input type="radio" name="manner" /><span>满意</span><input type="radio" name="manner" /><span>一般</span>
+				</div>
+				<div>
+					<h1><span>4、</span>您认为我公司的服务需要改进的地方：</h1>
+					<textarea name="" rows="10" cols="60" placeholder="亲！评价字数在10个以上哦"></textarea>
+				</div>
+
+				<button onclick="subTJ()">提交</button>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	
+	function subTJ () {
+		var a=$('textarea').val()
+		if(a.length<=10){
+			alert('填写信息不全')
+		}else{
+			
+			alert('已提交！感谢您的宝贵意见。')
+						window.location.reload();
+			
+			
+		}
+	}
+	
+	
+	
+	
+</script>

@@ -1,0 +1,243 @@
+<link rel="stylesheet" type="text/css" href="/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/css/DetailPages.css" />
+<script src="/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+
+<article>
+	<section>
+		<div>
+			<div id="menus_show" class="clearfloat">
+				<div id="menus_showone">
+					<div id="menus_showone_one">
+						<ul class="clearfloat">
+							{{#each datas.navImgD}}
+							<li>
+								<img src="/images/detailPages/{{this}}" alt="" />
+							</li>
+							{{/each}}
+
+						</ul>
+					</div>
+					<div id="menus_showone_two">
+						<a>查看菜单</a>
+					</div>
+				</div>
+				<div id="menus_showtwo">
+					<ul>
+						{{#each datas.navImgS}}
+						<li id="menus_showtwo_one">
+							<a>
+								<img src="/images/detailPages/{{this}}" alt="" />
+							</a>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+			<div id="briefing_show">
+				<!--msg1-->
+				<div id="briefing_showone">
+					<h2>{{datas.msg1mh2}}</h2>
+					<p id="titlepay">{{datas.msg1p1}}</p>
+					<p>{{datas.msg1p2}}</p>
+					<p>{{datas.msg1p3}}</p>
+					<p id="picepay">{{datas.msg1p4}} <s>{{datas.msg1p4s}}</s></p>
+				</div>
+
+				<!--msg2-->
+				<div id="briefing_showtwo">
+					<p>{{datas.msg2pb1}}<b>｜</b>{{datas.msg2pb2}}</p>
+					<h2>{{datas.msg2h2}}</h2> {{#each datas.msg2p}}
+					<p>{{this}}</p>
+					{{/each}}
+					<div id="more">
+						<!--pdiv-->
+						{{#each datas.msg2ppdiv}}
+
+						<p>{{this}}</p>
+
+						{{/each}}
+
+					</div>
+					<p>更多</p>
+					<a id="payall">
+						立即订购
+					</a>
+					<script type="text/javascript">
+						$('#payall').click(function() {
+							var titlepay = $('#titlepay').text()
+							var picepay = $('#picepay').text().slice(0, 2)
+							localStorage.setItem('titlepay', titlepay)
+							localStorage.setItem('picepay', picepay)
+
+							$.get('/deliuser/islog', function(result) {
+								console.log(result)
+								if(result.islog) {
+									location.href = "/payment"
+
+									$('#dltitle').hide()
+									$('#mytitle').show()
+								} else {
+									alert('请先登录！')
+									location.href = "/login"
+
+									$('#dltitle').show()
+									$('#mytitle').hide()
+								}
+							})
+
+						})
+					</script>
+				</div>
+				<!--msg3-->
+				<div id="briefing_showthree">
+					<h2>{{datas.msg3h2}}</h2> {{#each datas.msg3p}}
+					<p>{{this}}</p>
+					{{/each}}
+
+				</div>
+				<!--msg4-->
+
+				<div id="briefing_showfour">
+					<h2>{{datas.msg4h2}}</h2> {{#each datas.msg4p}}
+					<p>{{this}}</p>
+					{{/each}}
+
+				</div>
+				<div id="briefing_showfive">
+					<h2>猜你喜欢</h2>
+					<div id="briefing_showfive_one">
+						<ul class="clearfloat">
+
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_7.jpg" /></a>
+								<a href="">
+									<p>一餐享用雪龙和牛等多种顶级食材 尚...</p>
+									<p>全天尊享单人餐</p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>450元／位<s>¥885</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>尊享豪华餐</p>
+								</div>
+							</li>
+
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_8.jpg" /></a>
+								<a href="">
+									<p>空运一桌日式鲜味，桥场居酒屋超值单人会席</p>
+									<p></p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>188元／位<s>¥350</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>超值鲜味餐</p>
+								</div>
+							</li>
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_9.jpg" /></a>
+								<a href="">
+									<p>京城最佳火锅餐厅之一，者火和牛板筋单人套餐</p>
+									<p></p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>188元／位<s>¥250</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>最佳煮火餐</p>
+								</div>
+							</li>
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_10.jpg" /></a>
+								<a href="">
+									<p>专业营养师驻店服务，轻食客单人健康餐</p>
+									<p></p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>68元／位<s>¥95</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>专业配置餐</p>
+								</div>
+							</li>
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_13.jpg" /></a>
+								<a href="">
+									<p>音乐人老板打造国内人气韩餐品牌，特</p>
+									<p>升级版双人海鲜面套餐...</p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>88元／位<s>¥120</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>人气海鲜餐</p>
+								</div>
+							</li>
+							<li>
+								<a href=""><img src="/images/detailPages/detialpages_12.jpg" /></a>
+								<a href="">
+									<p>进口面包蟹与手工 Q 弹奶香的完美结合</p>
+									<p>Light&Salt on the Bund 双人晚餐</p>
+								</a>
+								<div class="clearfloat" id="briefing_showfive_onered">
+									<p>468元／位<s>¥688</s></p>
+									<a>心</a>
+								</div>
+								<div>
+									<p>结合双人餐</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--菜单-->
+		<div id="coating">
+			<div id="menus_showone_three">
+				<div id="coating_one">
+					<img src="/images/detailPages/detialpages_2.jpg" alt="" />
+					<b id="concealment">×️</b>
+				</div>
+				<div id="coating_two">
+					<p>MENU</p>
+				</div>
+				<div id="coating_three">
+
+					<div>
+						<h3>-主菜-</h3> {{#each datas.msg5divp1}}
+						<p>{{this}}</p>
+						{{/each}}
+					</div>
+					<div>
+						<h3>- 凉拌菜和涮菜 -</h3> {{#each datas.msg5divp2}}
+						<p>{{this}}</p>
+						{{/each}}
+					</div>
+					<div>
+						<h3>- 炸物或铁板 -</h3> {{#each datas.msg5divp3}}
+						<p>{{this}}</p>
+						{{/each}}
+					</div>
+					<div>
+						<h3>- 软饮 -</h3> {{#each datas.msg5divp4}}
+						<p>{{this}}</p>
+						{{/each}}
+					</div>
+				</div>
+			</div>
+			<div id="menus_showone_four">
+
+			</div>
+		</div>
+	</section>
+
+</article>
+
+<script src="/js/DetailPages.js" type="text/javascript" charset="utf-8"></script>

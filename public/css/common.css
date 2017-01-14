@@ -1,0 +1,42 @@
+/*通用样式*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*清除浮动*/
+
+.clearfloat:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	zoom: 1;
+}
+button{
+	outline: none;
+	cursor: pointer;
+	
+}
+
+/************/
